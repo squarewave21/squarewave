@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name=”robots” content=”noindex”>
+  <title>SQUAREWAVE</title>
+  <!-- css-->
+  <link rel="stylesheet" href="css/drawer.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/wpd2muo.css" />
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <meta name="description" content="作曲家・ミキサーの瀬川みぞれが制作を行うインターネット音楽スタジオです。" />
+  <link rel="icon" href="img/favicon.ico" />
+  <meta property="og:title" content="SQUAREWAVE" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://squarewave.jp/" />
+  <meta property="og:image" content="https://squarewave.jp/img/OGP.png" />
+  <meta property="og:site_name" content="SQUAREWAVE" />
+  <meta property="og:description" content="SQUAREWAVEは、作曲家・ミキサーの瀬川みぞれが制作を行うインターネット音楽スタジオです。" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@square_x_wave" />
+  <meta name="twitter:player" content="@square_x_wave" />
+</head>
+
+<body class="top drawer drawer--right fadeout">
+  <div id="particle"></div>
+  <div class="bg_nav menu"></div>
+  <!-- <div class="bg_mv"></div> -->
+  <main>
+    <article>
+      <header>
+
+
+        <div class="flex">
+          <div class="blk01">
+            <h1><span><img src="img/header_logo.png" alt="SQUAREWAVE"></span></h1>
+          </div>
+        </div>
+
+        <div class="sp_nav">
+          <button class="drawer-toggle drawer-hamburger menu menu__line" type="button">
+            <span class="sr-only">toggle navigation</span><span class="drawer-hamburger-icon"></span>
+          </button>
+        </div>
+        <nav class="gnav">
+          <div class="gnav__wrap">
+            <ul class="gnav__menu">
+              <li class="gnav__menu__item menu__line">
+                <a class="menu" href="#about">ABOUT</a>
+              </li>
+              <!-- <li class="gnav__menu__item">
+                <a class="menu" href="#service">SERVICE</a>
+              </li> -->
+              <li class="gnav__menu__item">
+                <a class="menu" href="#works">WORKS</a>
+              </li>
+              <!-- <li class="gnav__menu__item">
+                <a class="menu" href="#system">SYSTEM</a>
+              </li>
+              <li class="gnav__menu__item">
+                <a class="menu" href="#member">MEMBER</a>
+              </li>
+              <li class="gnav__menu__item">
+                <a class="menu" href="#price">PRICE</a>
+              </li> -->
+              <li class="gnav__menu__item">
+                <a class="menu" href="#contact">CONTACT</a>
+              </li>
+            </ul>
+            <div class="nav_contact">
+              <ul class="fade-start">
+                <li><a href="mailto:info@squarewave.jp" target="_blank">info@squarewave.jp</a></li>
+                <li><a href="tel:06-4305-4068">06-4305-4068</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--gnav-wrap-->
+        </nav>
+      </header>
+
+      <script>
+        var navFlg = false;
+        $('.menu').on('click', function () {
+          $('.menu__line').toggleClass('active');
+          $('.gnav').fadeToggle();
+          $('.bg_nav').fadeToggle();
+        });
+      </script>
+
+      <!-- <section class="mv fade-start">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 486.4 140.21"
+						class="logo"
+					>
+						<defs>
+							<style>
+								.cls-1 {
+									isolation: isolate;
+								}
+
+								.cls-2 {
+									font-size: 13px;
+									font-family: URWDINSemiCond-DemiItalic, URW DIN SemiCond;
+									font-weight: 300;
+									font-style: italic;
+									letter-spacing: 0.24em;
+								}
+
+								.cls-3 {
+									mix-blend-mode: multiply;
+								}
+
+								.cls-4 {
+									fill: #fff;
+								}
+
+								.cls-5 {
+									fill: #fff;
+								}
+
+								.cls-6 {
+									fill: #fff;
+								}
+
+								.cls-8 {
+									fill: #fff;
+								}
+							</style>
+						</defs>
+						<g class="cls-1">
+							<g id="レイヤー_2" data-name="レイヤー 2">
+								<g id="レイヤー_1-2" data-name="レイヤー 1">
+									<text class="cls-8" transform="translate(148.11 137.04)">
+										TOTAL CREATIVE OFFICE
+									</text>
+									<path
+										d="M225.26,49.08c.44,1,11.64,3.26,13.85-1.11s-7.43-11.57-6.49-13.45c1.77-3.48,28.84-1.61,31.12-6.11S247.45-3.41,249.93.35"
+									/>
+									<path
+										d="M231.22,38c.95-1.88-10.69-10.13-8.47-14.5s15,1.56,15.84-.05"
+									/>
+									<g class="cls-3">
+										<rect
+											class="cls-4"
+											x="1.76"
+											y="86.09"
+											width="7.15"
+											height="2.41"
+										/>
+										<path
+											class="cls-4"
+											d="M24.42,96.94H29a11.53,11.53,0,0,0-3.57-8.77c-2.13-2-5.2-3.1-8.46-4.24-2.63-1-4-1.46-5-2.41a3.6,3.6,0,0,1-1.32-2.85c0-2.15,1.38-4.94,5.77-4.94a8.14,8.14,0,0,1,6.83,3.61l4.26-5.64a16,16,0,0,0-11.84-4.94C6.33,66.76,2.19,73,2.19,79.18A9.85,9.85,0,0,0,5.52,87a20.06,20.06,0,0,0,7,3.68l1.22.42v-.22h7.15v2.41H18.33c.21.16.41.32.6.49a4.93,4.93,0,0,1,1.63,3.8c0,3.55-2.76,5.83-6.46,5.83A9.78,9.78,0,0,1,5.33,97.8L0,102.94a17.18,17.18,0,0,0,14.42,8c7.81,0,13.35-4.61,14.36-11.57H24.42Z"
+										/>
+									</g>
+									<g class="cls-3">
+										<rect
+											class="cls-5"
+											x="4.15"
+											y="86.09"
+											width="7.15"
+											height="2.41"
+										/>
+										<path
+											class="cls-5"
+											d="M26.8,96.94h4.53a11.53,11.53,0,0,0-3.56-8.77c-2.13-2-5.2-3.1-8.46-4.24-2.64-1-4-1.46-5-2.41A3.58,3.58,0,0,1,13,78.67c0-2.15,1.38-4.94,5.76-4.94a8.13,8.13,0,0,1,6.83,3.61l4.27-5.64A16,16,0,0,0,18,66.76C8.72,66.76,4.58,73,4.58,79.18A9.85,9.85,0,0,0,7.9,87a20,20,0,0,0,7,3.68l1.21.42v-.22h7.15v2.41h-2.5a7.3,7.3,0,0,1,.59.49,4.93,4.93,0,0,1,1.63,3.8c0,3.55-2.76,5.83-6.45,5.83A9.8,9.8,0,0,1,7.71,97.8l-5.33,5.14a17.19,17.19,0,0,0,14.42,8c7.81,0,13.36-4.61,14.36-11.57H26.8Z"
+										/>
+									</g>
+									<path
+										d="M82.16,107.43a21.72,21.72,0,0,1-11.91,3c-13.16,0-22.31-9-22.31-21.81s9.15-21.87,22.31-21.87,22.32,9.15,22.32,21.87a21,21,0,0,1-5.52,14.86l6.77,6.83-8.21.81Zm-.75-9.77a14,14,0,0,0,2.76-9c0-8.46-5.77-14.48-13.92-14.48s-13.91,6-13.91,14.48,5.7,14.42,14.1,14.42a13.24,13.24,0,0,0,6.21-1.38L68.12,93.4l8.46-.69Z"
+									/>
+									<path
+										d="M119.63,67.7V94a9.06,9.06,0,0,0,2,6.2,9.08,9.08,0,0,0,13.29,0,9.06,9.06,0,0,0,2-6.2V67.7h8.15V93.27c0,4-.63,8-3.13,11.16-3,3.94-8.28,6-13.67,6s-10.65-2.07-13.66-6c-2.51-3.2-3.13-7.21-3.13-11.16V67.7Z"
+									/>
+									<path
+										d="M189.51,100.73H172.65L169,109.5h-8.84l18-41.8h6.4L202,109.5h-8.77Zm-2.38-6.64-6-15-5.95,15Z"
+									/>
+									<path
+										d="M231.62,67.7c5.77,0,8.71,1.5,10.65,3.13a11.88,11.88,0,0,1,4.14,9.4A11.25,11.25,0,0,1,237,91.89l13,17.61H239.83L228.67,92.71h-1V109.5h-8.15V67.7Zm-4,19.24H230c1.57,0,8-.19,8-6.33s-6.39-6.27-7.89-6.27h-2.45Z"
+									/>
+									<path
+										d="M291.34,74.72h-15v9.34h14.42v7H276.3v11.4h15v7H268.15V67.7h23.19Z"
+									/>
+									<path
+										d="M392.47,100.73H375.61l-3.7,8.77h-8.83l18-41.8h6.4l17.48,41.8h-8.77Zm-2.38-6.64-6-15-5.95,15Z"
+									/>
+									<path
+										d="M419.29,67.7l11.15,28.08L441.6,67.7h8.9l-17.68,41.8h-4.88L410.39,67.7Z"
+									/>
+									<path
+										d="M486.4,74.72h-15v9.34h14.41v7H471.36v11.4h15v7H463.21V67.7H486.4Z"
+									/>
+									<polygon
+										class="cls-6"
+										points="329.85 85.88 334.56 85.88 334.56 96.59 355.98 70.38 362.39 70.38 329.6 113.3 329.85 85.88"
+									/>
+									<polygon
+										points="313.15 68 317.87 68 317.87 94.21 339.29 68 345.69 68 312.91 110.92 313.15 68"
+									/>
+									<polygon
+										points="328.65 83.5 333.37 83.5 333.37 94.21 354.79 68 361.19 68 328.41 110.92 328.65 83.5"
+									/>
+									<g class="cls-3">
+										<rect x="2.96" y="86.09" width="7.15" height="2.41" />
+										<path
+											d="M25.61,96.94h4.53a11.57,11.57,0,0,0-3.56-8.77c-2.14-2-5.21-3.1-8.47-4.24-2.63-1-4-1.46-5-2.41a3.6,3.6,0,0,1-1.32-2.85c0-2.15,1.38-4.94,5.77-4.94a8.14,8.14,0,0,1,6.83,3.61l4.26-5.64A16,16,0,0,0,16.8,66.76C7.52,66.76,3.39,73,3.39,79.18A9.85,9.85,0,0,0,6.71,87a20.06,20.06,0,0,0,7,3.68l1.22.42v-.22H22v2.41H19.52c.21.16.41.32.6.49a4.93,4.93,0,0,1,1.63,3.8c0,3.55-2.76,5.83-6.46,5.83A9.79,9.79,0,0,1,6.52,97.8l-5.33,5.14a17.19,17.19,0,0,0,14.42,8c7.81,0,13.36-4.61,14.36-11.57H25.61Z"
+										/>
+									</g>
+								</g>
+							</g>
+						</g>
+					</svg>
+				</section> -->
+
+      <section class="mv">
+        <div class="logo fade-start"><img src="img/logo.png" width="545" alt="SQUAREWAVE"></div>
+      </section>
+
+      <div class="arrow_scroll fade-start"><img src="img/arrow.png" alt=""></div>
+
+      <section class="about" id="about">
+        <div class="content_blk">
+          <h2 class="fade-start ttl">
+            ABOUT
+            <span class="sub-ttl">SQUAREWAVEとは</span>
+          </h2>
+          <p class="txt fade-start">
+            作曲家として活動している瀬川みぞれの制作実績を掲載するポートフォリオサイトです。<br>
+            作曲編曲・トラックメイク・ミックスダウン・マスタリングなど<br>音に関することを日々の業務としております。<br>
+            また、サウンドエンジニアリングスタジオ「Penguin Sound Laboratory」との業務提携による<br>レコーディング・ミックスダウン業務も行なっております。
+          </p>
+        </div>
+      </section>
+
+      <!-- <section class="service" id="service">
+        <h2 class="fade-start ttl">
+          SERVICE
+          <span class="sub-ttl">サービス一覧</span>
+        </h2>
+        <div class="content_blk">
+          <ul class="list fade-start">
+            <li class="btn1"><span>作曲 / 編曲</span></li>
+            <li class="btn2"><span>ミックスダウン / マスタリング</span></li>
+            <li class="btn3"><span>各種整音</span></li>
+          </ul>
+        </div>
+        <div class="sv_txt txt fade-start">
+          <div class="txt1">
+            <div class="back">
+              <h3>
+                COMPOSE
+                <span class="sub-ttl">作曲 / 編曲</span>
+              </h3>
+            </div>
+            <div class="content_blk">
+              <p class="txt_lead">あなただけのオリジナル楽曲を制作致します。</p>
+              <p class="txt_detail">
+                当方ではギターの表現力とピアノ・シンセ・ストリングスなどの打ち込みサウンドを活かした楽曲制作を得意としており、主にロックやポップスなどのオリジナル楽曲をご提案いたします。ギタリストならではの表現力と音作りで他とは違う作品を制作可能です。ミックス・マスタリングも込みで１ヶ月で完パケ納品致しますのでぜひ一度ご依頼ください。
+              </p>
+            </div>
+          </div>
+          <div class="txt2">
+            <div class="back">
+              <h3>
+                MIX/<br>MASTERRING
+                <span class="sub-ttl">ミックス / マスタリング</span>
+              </h3>
+            </div>
+            <div class="content_blk">
+              <p class="txt_lead">楽曲のミックス・マスタリングを担当し、ご納得のいく作品作りをお手伝いします。</p>
+              <p class="txt_detail">カラオケ(2mix)に対して歌を馴染ませるボーカルミックスから一からの楽曲ミックスダウンまでお受けしております。<br>
+                ボーカルミックスでは基本処理(EQ/Comp/Rev/Delayなど)の他にボーカルエディット(ピッチ/リズム)、特殊加工も依頼者様のご要望に沿って再現いたします。<br>
+                ハモリトラックの生成や数人での合唱曲でのミックスにも対応しておりますので是非ご依頼くださいませ。なお、楽曲ミックスの他にもボイス編集やノイズ除去などにも対応しております。ミックスご依頼時はこちらのガイドに準拠したデータをお送りください。<a
+                  href="http://squarewave.jp/readme/">データ作成ガイドライン</a><br>
+                当方のリソース状況により、業務提携先である<a href="https://www.penguinsoundlab.com">「Penguin Sound
+                  Laboratory」</a>と共同で制作を行なっております。
+              </p>
+            </div>
+          </div>
+          <div class="txt3">
+            <div class="back">
+              <h3>
+                MULTI AUDIO
+                <span class="sub-ttl">各種整音</span>
+              </h3>
+            </div>
+            <div class="content_blk">
+              <p class="txt_lead">音声の
+
+                カット編集やノイズ処理・エフェクト処理など、様々な音響編集を承ります。</p>
+              <p class="txt_detail">動画・ボイスドラマなどに合わせた音声の編集や、ノイズの除去などを専門のソフトウェアを用いて行っております。<br>
+                ミックスの前に下処理を綺麗にされたい方や、レコーディングをしたボイスのノイズを綺麗にしたい方、撮影した音声を編集して欲しい方など、様々なニーズに合わせて制作可能です。
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+        <div class="flow">
+          <p class="flow_ttl fade-start">制作の流れ</p>
+          <ol class="flow_chart fade-start">
+            <li>
+              <p clas s="headline">ご依頼・お問い合わせ</p>
+              <p>メール・お電話・問い合わせフォームからお気軽にお問い合わせください。</p>
+            </li>
+            <li>
+              <p class="headline">データの送付</p>
+              <p>ミックス/アスタリングの場合は、必要データをお送りください。<br>
+                歌ってみたなどのボーカルミックスの場合はオケデータも同梱の上ご送付ください。</p>
+            </li>
+            <li>
+              <p class="headline">制作開始</p>
+              <p>データが届き次第、依頼内容の作編曲/ミックスダウンを開始致します。</p>
+            </li>
+            <li>
+              <p class="headline">リテイク</p>
+              <p>制作データをお聞き頂き、3回まで無償で修正させて頂きます。</p>
+            </li>
+            <li>
+              <p class="headline">納品・ご請求</p>
+              <p>請求書をお送り致しますので、指定の口座に料金をお振込ください。<br>
+                ご希望のお客様へはクレジットカード等での決済も可能です。</p>
+            </li>
+          </ol>
+        </div>
+        <div class="btn_contact fade-start"><a href="#contact">ご依頼はこちらから</a></div>
+      </section> -->
+
+      <section class="works" id="works">
+        <div class="content_blk">
+          <h2 class="fade-start ttl">
+            WORKS
+            <span class="sub-ttl">制作実績</span>
+          </h2>
+          <p class="txt fade-start">
+            制作に参加させて頂いた制作実績を掲載しています。<br>
+          </p>
+        </div>
+        <div class="slider-wrapper fade-start">
+          <div class="slick-slider">
+            <div class="slide">
+              <a href="https://davidrecords.bandcamp.com/"><img src="img/works08.jpg" width="870" alt=""></a>
+              <p>
+                FLUER
+                <span>作編曲/トータルデザイン</spa>
+              </p>
+            </div>
+            <div class="slide">
+              <a href="https://davidrecords.bandcamp.com/"></a><img src="img/works09.jpg" width="870" alt=""></a>
+              <p>
+                the crawlings
+                <span>作編曲/トータルデザイン</spa>
+              </p>
+            </div>
+            <div class="slide">
+              <a href="https://davidrecords.bandcamp.com/"></a><img src="img/works13.jpg" width="870" alt=""></a>
+              <p>
+                The Rebirth
+                <span>作編曲/トータルデザイン</spa>
+              </p>
+            </div>
+            <!-- <div class="slide">
+              <img src="img/works10.jpg" width="870" alt="">
+              <p>
+                黄ノ星つくり / ポジティブパレード cover
+                <span>ディレクション<br>（ミックス/マスタリング：PSL鴨川かも）</spa>
+              </p>
+            </div>
+            <div class="slide">
+              <img src="img/works11.jpg" width="870" alt="">
+              <p>
+                多間硝子 読谷山文乃 / Lust Blue cover
+                <span>ディレクション<br>（ミックス/マスタリング：PSL鴨川かも）</spa>
+              </p>
+            </div>
+            <div class="slide">
+              <img src="img/works12.jpg" width="870" alt="">
+              <p>
+                焔魔るり / 千歌繚乱 cover
+                <span>ディレクション<br>（ミックス/マスタリング：PSL鴨川かも）</spa>
+              </p>
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+      <section class="system" id="system">
+        <div class="content_blk">
+          <h2 class="fade-start ttl">
+            SYSTEM
+            <span class="sub-ttl">スタジオ環境</span>
+          </h2>
+          <table class="fade-start">
+            <colgroup>
+              <col class="w32per" span="1">
+              <col class="w68per" span="1">
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>PC</th>
+                <td>MacBook Pro (16-inch, 2019) 2.3 GHz 8コアIntel Core i9 Memory 64GB 2667 MHz DDR4 / Windows10 Custom PC
+                </td>
+              </tr>
+              <tr>
+                <th>DAW</th>
+                <td>Protools 2019 / Studio one 4.6.2</td>
+              </tr>
+              <tr>
+                <th>Audio I/F</th>
+                <td>RME FIREFACE UCX / apogee duet</td>
+              </tr>
+              <tr>
+                <th>Speaker</th>
+                <td>YAMAHA HS5</td>
+              </tr>
+              <tr>
+                <th>Headphone</th>
+                <td>SONY MDR CD-900ST / SONY MDR-7506</td>
+              </tr>
+              <tr>
+                <th>Mic</th>
+                <td>AKG C214 / SENHEISER e945</td>
+              </tr>
+              <tr>
+                <th>Guitar</th>
+                <td>Fender USA american performer stratcaster</td>
+              </tr>
+              <tr>
+                <th>Effecter</th>
+                <td>TS808 / fuzzfactory / EP booster / etc</td>
+              </tr>
+              <tr>
+                <th>Plugin（Instrument）</th>
+                <td>BFD3 / MODOBASS / Vienna Instruments / AVENGER / Syntronik / Addictive keys / SPIRE / OUTPUT All
+                  bundle</td>
+              </tr>
+              <tr>
+                <th>Plugin（Effect）</th>
+                <td>amplitube4 bundle / Melodyne4 studio / waves bundle / T-RACKS bundle /
+                  iZotope（Neutron3,Nectar3,Ozone9,RX7,TonalBalanceCotorol2）</td>
+              </tr>
+              <tr>
+                <th>Other</th>
+                <td>Auturia KEYLAB61 ESSENTIAL BLACK / Adobe CC Complete</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <script>
+        $(function () {
+          $('.txt2,.txt3,.txt4,.txt5,.txt6').hide();
+          $('.btn1').on('click', function () {
+            $('.txt1').fadeIn();
+            $('.txt2,.txt3,.txt4,.txt5,.txt6').hide();
+          });
+          $('.btn2').on('click', function () {
+            $('.txt2').fadeIn();
+            $('.txt1,.txt3,.txt4,.txt5,.txt6').hide();
+          });
+          $('.btn3').on('click', function () {
+            $('.txt3').fadeIn();
+            $('.txt1,.txt2,.txt4,.txt5,.txt6').hide();
+          });
+          $('.btn4').on('click', function () {
+            $('.txt4').fadeIn();
+            $('.txt1,.txt2,.txt3,.txt5,.txt6').hide();
+          });
+          $('.btn5').on('click', function () {
+            $('.txt5').fadeIn();
+            $('.txt1,.txt2,.txt3,.txt4,.txt6').hide();
+          });
+          $('.btn6').on('click', function () {
+            $('.txt6').fadeIn();
+            $('.txt1,.txt2,.txt3,.txt4,.txt5').hide();
+          });
+        });
+      </script>
+
+      <!-- <section class="member" id="member">
+        <div class="blk01">
+          <div class="fade-start"><img src="img/logo.png" width="557" alt="SQUAREWAVE"></div>
+        </div>
+        <div class="blk02">
+          <div>
+            <h2 class="ttl fade-start">
+              MEMBER
+              <span class="sub-ttl">メンバープロフィール</span>
+            </h2>
+            <ul>
+              <li class="fade-start">
+                <div class="icon-box"><img src="img/member_icon01.png" alt=""></div>
+                <div class="txt-box">
+                  <p class="name">瀬川みぞれ</p>
+                  <p class="job">作編曲家 / ミキサー / ディレクター</p>
+                  <p class="detail">
+                    <span>
+                      バンドでの作曲経験・ボカロ/同人音楽活動経験を活かし、現在はvtuber/歌い手/ボカロPさんと作品制作をしています。<br>
+                      ギタリスト作曲家ならではの細部にこだわった楽曲制作・音作りが得意です。<br>
+                      なお、ミックス・マスタリングではサウンドスタジオ「Penguin Sound
+                      Laboratory」のプロエンジニア、鴨川かも氏と共同で制作も行なっており、東京都内でのスタジオレコーディングにも対応しております。
+                    </span>
+                  </p>
+                </div>
+              </li>
+            </ul>
+            </di>
+          </div>
+      </section> -->
+
+      <!-- <section class="price" id="price">
+        <div class="content_blk">
+          <h2 class="fade-start ttl">
+            PRICE
+            <span class="sub-ttl">料金プラン</span>
+          </h2>
+          <p class="txt fade-start">
+            当チームで受付しているミックス、マスタリングサービスの料金表になります。<br>
+            ご予算・納期については柔軟に対応可能ですのでお気軽にご相談ください。
+          </p>
+          <ul class="fade-start">
+            <li>
+              <dl>
+                <dt>作曲・編曲</dt>
+                <dd>¥25,000（納期1ヶ月）</dd>
+                <dt class="option-ttl">オプション</dt>
+                <dd>
+                  <dl class="option">
+                    <dt>ボーカルエディット</dt>
+                    <dd>無料</dd>
+                    <dt>ミックス・マスタリング</dt>
+                    <dd>無料</dd>
+                  </dl>
+                  <p><span>※制作内容により外部クリエイターと共作する場合がございます。</span></p>
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>ボーカルミックス</dt>
+                <dd>¥8,000（納期1週間）</dd>
+                <dt class="option-ttl">オプション</dt>
+                <dd>
+                  <dl class="option">
+                    <dt>ボーカルエディット</dt>
+                    <dd>無料</dd>
+                    <dt>マスタリング</dt>
+                    <dd>無料</dd>
+                    <dt>スピード納品（3日）</dt>
+                    <dd>¥3,000</dd>
+                    <dt>コーラス生成</dt>
+                    <dd>¥1,500（1トラック）</dd>
+                  </dl>
+                  <p><span>※5トラックを超える場合は1トラックにつき+¥1000</spa>
+                  </p>
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>ボーカルミックス（ワンコーラス）</dt>
+                <dd>¥4,000（納期1週間）</dd>
+                <dt class="option-ttl">オプション</dt>
+                <dd>
+                  <dl class="option">
+                    <dt>ボーカルエディット</dt>
+                    <dd>無料</dd>
+                    <dt>マスタリング</dt>
+                    <dd>無料</dd>
+                    <dt>スピード納品（3日）</dt>
+                    <dd>¥3,000</dd>
+                    <dt>コーラス生成</dt>
+                    <dd>¥1,500（1トラック）</dd>
+                  </dl>
+                  <p><span>※5トラックを超える場合は1トラックにつき+¥1000</span></p>
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>パラミックス</dt>
+                <dd>¥12,000（納期1〜2週間）</dd>
+                <dt class="option-ttl">オプション</dt>
+                <dd><span>35トラック以上は1トラックごとに+500円。リズム・ボーカルエディットは別途費用となります。</span></dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>ボーカル / サウンドエディット</dt>
+                <dd>¥3,500〜</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>各種整音（ボイス編集・ノイズ処理など）</dt>
+                <dd>¥5,000〜</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>デザイン制作（WEB・印刷物・動画など）</dt>
+                <dd><span>内容により金額が異なりますので、お気軽にご相談ください。</span></dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+      </section> -->
+
+      <section class="contact" id="contact">
+        <div class="content_blk">
+          <h2 class="fade-start ttl">
+            CONTACT
+            <span class="sub-ttl">ご依頼・ご相談</span>
+          </h2>
+
+          <div class="blk01">
+            <h3 class="fade-start">ご依頼はこちらから</h3>
+            <p class="txt fade-start">
+              各種制作に関するお問い合わせ、ご相談はこちらから承っております。<br>
+              作曲・編曲・ギターREC・各種打ち込み・ミックスダウン・マスタリング・ボーカルエディット・レコーディング(都内)など<br>
+              様々な制作を行っており、ご相談・お打ち合わせは無料でお受けしておりますので<br>
+              お気軽にお問い合わせくださいませ。
+            </p>
+            <ul class="fade-start">
+              <li class="btn_mail">
+                <a href="mailto:info@squarewave.jp" target="_blank">
+                  メールで依頼
+                  <span>info@squarewave.jp</span>
+                </a>
+              </li>
+              <li class="btn_twitter">
+                <a href="https://twitter.com/square_x_wave21" target="_blank">
+                  TwitterDMで依頼
+                  <span>@square_x_wave21</span>
+                </a>
+              </li>
+              <li class="btn_discord line-1">
+                <a href="#" onclick="copyToClipboard()" class="copy">
+                  Discordで依頼<br>
+                  <span id="copyTarget">瀬川みぞれ#8707</span>
+                </a>
+              </li>
+              <script>
+                $(function () {
+                  $('.copy').click(function () {
+                    var copyTarget = document.getElementById("copyTarget");
+
+                    // コピーをお知らせする
+                    alert("DiscordにてこのIDをフレンド追加ください「瀬川みぞれ#8707」");
+                  });
+                });
+              </script>
+            </ul>
+          </div>
+          <div class="psl"><a href="https://www.penguinsoundlab.com/" target="_blank"><img src="img/psl.png" width="700"
+                alt=""></a></div>
+
+          <!-- <div class="form fade-start">
+							<form action="mail.php">
+								<ul>
+									<li class="radio01">
+										<p>お問い合わせ内容</p>
+										<ul>
+											<li class="next"><label><input type="radio" name="radio01"><span>ご依頼</span></label></li>
+											<li><label><input type="radio" name="radio01"><span>制作のご相談</span></label></li>
+											<li><label><input type="radio" name="radio01"><span>業務委託</span></label></li>
+										</ul>
+									</li>
+									<li class="radio02">
+										<p>ご依頼内容</p>
+										<ul>
+											<li class="next"><label><input type="radio" name="radio02"><span>ボーカルミックス</span></label></li>
+											<li class="next"><label><input type="radio" name="radio02"><span>ボーカルミックス（ワンコーラス）</span></label></li>
+											<li><label><input type="radio" name="radio02"><span>パラミックス</span></label></li>
+											<li><label><input type="radio" name="radio02"><span>ボーカル/サウンドエディット</span></label></li>
+											<li><label><input type="radio" name="radio02"><span>各種整音</span></label></li>
+										</ul>
+									</li>
+									<li class="checkbox01">
+										<p>オプション選択</p>
+										<ul>
+											<li><label><input type="checkbox" name="checkbox01"><span>ボーカル補正</span></label></li>
+											<li><label><input type="checkbox" name="checkbox01"><span>コーラス生成</span></label></li>
+											<li><label><input type="checkbox" name="checkbox01"><span>スピード納品</span></label></li>
+										</ul>
+									</li>
+									<li class="text01">
+										<p>お名前</p>
+										<div><input type="text" /></div>
+									</li>
+									<li class="text02">
+										<p>ご連絡先（メール・Twitter・Skype・Discordなど）</p>
+										<div><input type="text" /></div>
+									</li>
+									<li class="textarea01">
+										<p>お問い合わせ詳細</p>
+										<textarea name="kanso" rows="4" cols="40"></textarea>
+									</li>
+								</ul>
+								<div class="btn_submit"><input type="submit" value="内容送信" /></div>
+							</form>
+						</div> -->
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <div class="content_blk">
+      <!-- <div class="logo_f_wrap">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 486.4 140.21"
+						class="logo_f"
+					>
+						<defs>
+							<style>
+								.cls-1 {
+									isolation: isolate;
+								}
+
+								.cls-2 {
+									font-size: 13px;
+									font-family: URWDINSemiCond-DemiItalic, URW DIN SemiCond;
+									font-weight: 300;
+									font-style: italic;
+									letter-spacing: 0.24em;
+								}
+
+								.cls-2,
+								.cls-3 {
+									fill: #fff;
+								}
+
+								.cls-4 {
+									mix-blend-mode: multiply;
+								}
+							</style>
+						</defs>
+						<g class="cls-1">
+							<g id="レイヤー_2" data-name="レイヤー 2">
+								<g id="レイヤー_1-2" data-name="レイヤー 1">
+									<text class="cls-2" transform="translate(148.11 137.04)">
+										TOTAL CREATIVE OFFICE
+									</text>
+									<path
+										class="cls-3"
+										d="M225.26,49.08c.44,1,11.64,3.26,13.85-1.11s-7.43-11.57-6.49-13.45c1.77-3.48,28.84-1.61,31.12-6.11S247.45-3.41,249.93.35"
+									/>
+									<path
+										class="cls-3"
+										d="M231.22,38c.95-1.88-10.69-10.13-8.47-14.5s15,1.56,15.84-.05"
+									/>
+									<g class="cls-4">
+										<rect
+											class="cls-3"
+											x="1.76"
+											y="86.09"
+											width="7.15"
+											height="2.41"
+										/>
+										<path
+											class="cls-3"
+											d="M24.42,96.94H29a11.53,11.53,0,0,0-3.57-8.77c-2.13-2-5.2-3.1-8.46-4.24-2.63-1-4-1.46-5-2.41a3.6,3.6,0,0,1-1.32-2.85c0-2.15,1.38-4.94,5.77-4.94a8.14,8.14,0,0,1,6.83,3.61l4.26-5.64a16,16,0,0,0-11.84-4.94C6.33,66.76,2.19,73,2.19,79.18A9.85,9.85,0,0,0,5.52,87a20.06,20.06,0,0,0,7,3.68l1.22.42v-.22h7.15v2.41H18.33c.21.16.41.32.6.49a4.93,4.93,0,0,1,1.63,3.8c0,3.55-2.76,5.83-6.46,5.83A9.78,9.78,0,0,1,5.33,97.8L0,102.94a17.18,17.18,0,0,0,14.42,8c7.81,0,13.35-4.61,14.36-11.57H24.42Z"
+										/>
+									</g>
+									<g class="cls-4">
+										<rect
+											class="cls-3"
+											x="4.15"
+											y="86.09"
+											width="7.15"
+											height="2.41"
+										/>
+										<path
+											class="cls-3"
+											d="M26.8,96.94h4.53a11.53,11.53,0,0,0-3.56-8.77c-2.13-2-5.2-3.1-8.46-4.24-2.64-1-4-1.46-5-2.41A3.58,3.58,0,0,1,13,78.67c0-2.15,1.38-4.94,5.76-4.94a8.13,8.13,0,0,1,6.83,3.61l4.27-5.64A16,16,0,0,0,18,66.76C8.72,66.76,4.58,73,4.58,79.18A9.85,9.85,0,0,0,7.9,87a20,20,0,0,0,7,3.68l1.21.42v-.22h7.15v2.41h-2.5a7.3,7.3,0,0,1,.59.49,4.93,4.93,0,0,1,1.63,3.8c0,3.55-2.76,5.83-6.45,5.83A9.8,9.8,0,0,1,7.71,97.8l-5.33,5.14a17.19,17.19,0,0,0,14.42,8c7.81,0,13.36-4.61,14.36-11.57H26.8Z"
+										/>
+									</g>
+									<path
+										class="cls-3"
+										d="M82.16,107.43a21.72,21.72,0,0,1-11.91,3c-13.16,0-22.31-9-22.31-21.81s9.15-21.87,22.31-21.87,22.32,9.15,22.32,21.87a21,21,0,0,1-5.52,14.86l6.77,6.83-8.21.81Zm-.75-9.77a14,14,0,0,0,2.76-9c0-8.46-5.77-14.48-13.92-14.48s-13.91,6-13.91,14.48,5.7,14.42,14.1,14.42a13.24,13.24,0,0,0,6.21-1.38L68.12,93.4l8.46-.69Z"
+									/>
+									<path
+										class="cls-3"
+										d="M119.63,67.7V94a9.06,9.06,0,0,0,2,6.2,9.08,9.08,0,0,0,13.29,0,9.06,9.06,0,0,0,2-6.2V67.7h8.15V93.27c0,4-.63,8-3.13,11.16-3,3.94-8.28,6-13.67,6s-10.65-2.07-13.66-6c-2.51-3.2-3.13-7.21-3.13-11.16V67.7Z"
+									/>
+									<path
+										class="cls-3"
+										d="M189.51,100.73H172.65L169,109.5h-8.84l18-41.8h6.4L202,109.5h-8.77Zm-2.38-6.64-6-15-5.95,15Z"
+									/>
+									<path
+										class="cls-3"
+										d="M231.62,67.7c5.77,0,8.71,1.5,10.65,3.13a11.88,11.88,0,0,1,4.14,9.4A11.25,11.25,0,0,1,237,91.89l13,17.61H239.83L228.67,92.71h-1V109.5h-8.15V67.7Zm-4,19.24H230c1.57,0,8-.19,8-6.33s-6.39-6.27-7.89-6.27h-2.45Z"
+									/>
+									<path
+										class="cls-3"
+										d="M291.34,74.72h-15v9.34h14.42v7H276.3v11.4h15v7H268.15V67.7h23.19Z"
+									/>
+									<path
+										class="cls-3"
+										d="M392.47,100.73H375.61l-3.7,8.77h-8.83l18-41.8h6.4l17.48,41.8h-8.77Zm-2.38-6.64-6-15-5.95,15Z"
+									/>
+									<path
+										class="cls-3"
+										d="M419.29,67.7l11.15,28.08L441.6,67.7h8.9l-17.68,41.8h-4.88L410.39,67.7Z"
+									/>
+									<path
+										class="cls-3"
+										d="M486.4,74.72h-15v9.34h14.41v7H471.36v11.4h15v7H463.21V67.7H486.4Z"
+									/>
+									<polygon
+										class="cls-3"
+										points="329.85 85.88 334.56 85.88 334.56 96.59 355.98 70.38 362.39 70.38 329.6 113.3 329.85 85.88"
+									/>
+									<polygon
+										class="cls-3"
+										points="313.15 68 317.87 68 317.87 94.21 339.29 68 345.69 68 312.91 110.92 313.15 68"
+									/>
+									<polygon
+										class="cls-3"
+										points="328.65 83.5 333.37 83.5 333.37 94.21 354.79 68 361.19 68 328.41 110.92 328.65 83.5"
+									/>
+									<g class="cls-4">
+										<rect
+											class="cls-3"
+											x="2.96"
+											y="86.09"
+											width="7.15"
+											height="2.41"
+										/>
+										<path
+											class="cls-3"
+											d="M25.61,96.94h4.53a11.57,11.57,0,0,0-3.56-8.77c-2.14-2-5.21-3.1-8.47-4.24-2.63-1-4-1.46-5-2.41a3.6,3.6,0,0,1-1.32-2.85c0-2.15,1.38-4.94,5.77-4.94a8.14,8.14,0,0,1,6.83,3.61l4.26-5.64A16,16,0,0,0,16.8,66.76C7.52,66.76,3.39,73,3.39,79.18A9.85,9.85,0,0,0,6.71,87a20.06,20.06,0,0,0,7,3.68l1.22.42v-.22H22v2.41H19.52c.21.16.41.32.6.49a4.93,4.93,0,0,1,1.63,3.8c0,3.55-2.76,5.83-6.46,5.83A9.79,9.79,0,0,1,6.52,97.8l-5.33,5.14a17.19,17.19,0,0,0,14.42,8c7.81,0,13.36-4.61,14.36-11.57H25.61Z"
+										/>
+									</g>
+								</g>
+							</g>
+						</g>
+					</svg>
+				</div> -->
+      <div class="logo_f fade-start"><img src="img/logo.png" width="350" alt=""></div>
+      <!-- <nav>
+        <ul class="f_nav fade-start">
+          <li><a href="#about" class="navigate-anchor">ABOUT</a></li>
+          <li><a href="#service" class="navigate-anchor">SERVICE</a></li>
+          <li><a href="#works" class="navigate-anchor">WORKS</a></li>
+          <li><a href="#system" class="navigate-anchor">SYSTEM</a></li>
+          <li><a href="#member" class="navigate-anchor">MEMBER</a></li>
+          <li><a href="#price" class="navigate-anchor">PRICE</a></li>
+          <li><a href="#contact" class="navigate-anchor">CONTACT</a></li>
+        </ul>
+      </nav> -->
+      <div class="contact_blk">
+        <ul class="fade-start">
+          <li class="mail"><a href="mailto:info@squarewave.jp" target="_blank">info@squarewave.jp</a></li>
+          <!-- <li class="twitter"><a href="https://twitter.com/square_x_wave21" target="_blank">Twitter@square_x_wave21</a> -->
+          </li>
+        </ul>
+      </div>
+      <small class="fade-start">© SQUAREWAVE / All Rights Reserved.</small>
+    </div>
+  </footer>
+
+  <!-- js-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/plugin/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+  <script src="js/plugin/drawer.js"></script>
+  <script src="js/plugin/jquery.inview.min.js"></script>
+  <script src="js/plugin/particles.min.js"></script>
+  <script src="js/plugin/particleConfig.js"></script>
+  <script src="js/common/common.js"></script>
+
+  <script>
+    $('.focus-start').on('inview', function (event, isInView) {
+      if (isInView) {
+        $(this).addClass('focus-in-expand');
+      }
+    });
+    $('.fade-start').on('inview', function (event, isInView) {
+      if (isInView) {
+        $(this).addClass('fade-in');
+      }
+    });
+  </script>
+</body>
+
+</html>
